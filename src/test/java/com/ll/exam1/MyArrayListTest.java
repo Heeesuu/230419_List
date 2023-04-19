@@ -36,4 +36,18 @@ public class MyArrayListTest {
         assertThat(list.get(1)).isEqualTo("포도");
     }
 
+    @Test
+    @DisplayName("배열의 크기가 자동으로 늘어나야한다.")
+    void t4() {
+        MyArrayList<String> list = new MyArrayList<>();
+
+        list.add("사과");
+        list.add("포도");
+        list.add("당근");
+
+        assertThat(list.get(0)).isEqualTo("사과");
+        assertThat(list.get(1)).isEqualTo("포도");
+        assertThat(list.get(2)).isEqualTo("당근");
+    }
+
 }
