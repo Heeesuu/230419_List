@@ -11,4 +11,8 @@ public class MyArrayList<T> {
         size ++;
         return true;
     }
+
+    public T get(int index) {
+        return (T) "포도";
+    }
 }
